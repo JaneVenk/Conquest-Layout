@@ -1,0 +1,608 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: $brownColor;
+    font-family: Roboto400;
+    font-size: $mediumFontSize;
+    line-height: 16.41px;
+}  
+
+a:hover{
+    transform:scale(1.2);
+}
+
+section{
+    width: 100%;
+    margin-bottom: 79px;
+}
+
+h2{
+    font-family: PD400;
+    font-size: 32px;
+    line-height: 36px;
+    color: $darkBrownColor;
+}
+
+h3{
+    font-family: PD700;
+    font-size: $mediumFontSize;
+    line-height: 24.26px;
+    color: $darkBrownColorWithOpacity;
+}
+
+button{
+    width: 205px;
+    height: 64px;
+    border: none;
+
+    font-family: Roboto500;
+    font-size: $littleFontSize;
+    line-height: $littleLineHeight;
+    letter-spacing: 1px;
+    color: $whiteColor;
+
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24),0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+// Header style start
+
+#header{
+    width: $contentBlockWidth;
+    height: fit-content; 
+    margin: 31px auto 28px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo{
+    width: 100px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logoName{
+    font-family: PD400;
+    font-size: $littleFontSize;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: $brownColor;
+}
+
+.menu{
+    width: 422px;
+    height: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.headerIcons{
+    width: 99px;
+    height: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:end;
+    justify-content:space-between;
+    position: relative;
+}
+
+.headerIconCircule{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 53px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color: rgba(230, 200, 180, 1);
+}
+
+.one{
+    font-family: Roboto400;
+    font-size: 8px;
+    line-height: 9.38px;
+    color: $darkBrownColor; 
+}
+
+// Header style end
+
+// Banner section style start
+
+#bannerSection{
+    height: 768px;
+}
+
+.innerBlock{
+    width: $contentBlockWidth;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    background-image: url("../images/watchBanner.png"), url("../images/elipseBanner.svg");
+    background-position: 530px,-120px;
+    background-repeat: no-repeat;
+    background-size: 44%, auto;
+}
+
+.line{
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    top: 272px;
+    background-color: $lineColor;
+}
+
+.mainInfo{
+    width: 343px;
+    height: fit-content;
+    position: absolute;
+    top: 236px;
+    left: 65px;
+}
+
+.bannerTitle{
+    font-family: PD400;
+    font-size: 45px;
+    line-height: 60px;
+    color: $darkBrownColor;
+}
+
+.collectionWord{
+    font-family: PD400;
+    font-size: 30px;
+    line-height: 40px;
+    color: $darkBrownColor;
+    margin: 16px 0 39px 0;
+}
+
+.text{
+    height: fit-content;
+    width: 250px;
+    font-family: Roboto300;
+    font-size: $mediumFontSize;
+    line-height: 21.33px;
+    color: $darkBrownColorWithOpacity;
+    margin-bottom: 39px;
+}
+
+.bannerButton{
+    background-color: $darkGreyColor;
+}
+
+.priceText{
+    font-family: Prata400;
+    font-size: $bigFontSize;
+    line-height: 21.68px;
+    display: inline-block;
+    margin-right: 7px;
+    color: $darkBrownColor;
+}
+
+.line2{
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 15.4px;
+    margin-bottom: 7px;
+    background-color: $lineColor;
+}
+
+.price{
+    width: 140px;
+    height: 16px;
+    position: absolute;
+    left: 463px;
+    top: 138px;
+}
+
+.size{
+    width: 187px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 636px;
+}
+
+.line3{
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 7px;
+    background-color: $lineColor;
+}
+
+.sizeText{
+    font-family: Prata400;
+    font-size: $bigFontSize;
+    line-height: 21.68px;
+    display: inline-block;
+    margin-left: 15px;
+    color: $darkBrownColor;
+}
+
+// Banner section style end
+
+// Popular models section style start
+
+#popularModelsSection{
+    height: 555px;
+}
+
+.innerBlockModels{
+    width: $contentBlockWidth;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.modelsTitle{
+    margin-bottom: 52px;
+}
+
+.seeAll{
+    width: 104px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    position: absolute;
+    top: 35.5px;
+    right: 0;
+}
+
+.seeAllText{
+    font-family: Roboto500;
+    font-size: $bigFontSize;
+    line-height: 18.75px;
+    color: $darkGreyColor;
+}
+
+.seeAllLine{
+    width: 101px;
+    height: 1px;
+    background-color: rgba(196, 192, 182, 1);
+}
+
+.watches{
+    width: 100%;
+    height: fit-content; // fit
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.watch{
+    width: 370px;
+    height: 467px;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+
+    background-image: url("../images/modelswatch1.png"), url("../images/elipseWatch.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
+    background-color: $milkColor;
+}
+
+.watch2{
+    width: 370px;
+    height: 467px;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+
+    background-image: url("../images/modelswatch2.png"), url("../images/elipseWatch.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
+    background-color: $milkColor; 
+}
+
+.watch3{
+    width: 370px;
+    height: 467px;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+
+    background-image: url("../images/modelswatch3.png"), url("../images/elipseWatch.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
+    background-color: $milkColor;
+}
+
+.watchPrice{
+    width: 55px;
+    height: $littleFontSize;
+    display: flex;
+    align-items:baseline;
+    justify-content:space-between;
+}
+
+.modelsWatchPrice{
+    font-family: Prata400;
+    font-size: $littleFontSize;
+    line-height: 16.26px;
+    color: $darkBrownColorWithOpacity;
+}
+
+.watchText{
+    width: 125px;
+    height: 16px;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    position: absolute;
+    bottom: 40px;
+}
+
+.watchLine{
+    width: 30px;
+    height: 1px;
+    background-color: $lineColor;
+
+    
+}
+
+.watchTextP{
+    font-family: RD400;
+    font-size: $bigFontSize;
+    line-height: 21.33px;
+   color: $darkBrownColor;
+}
+
+// Popular models section style end
+
+// Quality section style start
+
+#qualitySection{
+    height: 519px;
+    position: relative;
+}
+
+.left{
+    width: 34%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(247, 245, 239, 1);
+}
+
+.right{
+    width: 66%;
+    height: 100%;
+    display: inline-block;
+
+    background-image: url("../images/qualitybanner.svg");
+    background-repeat: no-repeat;
+    background-position: 104px;
+
+    background-color: $milkColor;
+
+}
+
+.info{
+    width: 376px;
+    height: fit-content;
+    position: absolute;
+    top: 27%;
+    right: 21%;
+}
+
+.infoText{
+    height: 63px;
+    font-family: Roboto400;
+    font-size: $bigFontSize;
+    line-height: 24px;
+    margin: 38px 0 45px 0;
+    color: $darkGreyColor;
+}
+
+.infoButton{
+    background-color: rgba(212, 176, 152, 1);
+}
+
+#qualityImage{
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+
+.counter{
+    width: 63px;
+    height: $littleFontSize;
+    position: absolute;
+    bottom: 4%;
+    right: 55%;
+    display: flex;
+    align-items:baseline;
+    justify-content:space-between;
+}
+
+.counterNumber{
+    font-family: Prata400;
+    font-size: $littleFontSize;
+    line-height: 16.26px;
+    color: $darkBrownColorWithOpacity;
+}
+
+// Quality section style end
+
+// Follow news section style start
+
+#followNewsSection{
+    height: 460px;
+}
+
+.innerFollowNewsBlock{
+    width: $contentBlockWidth;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 140px;
+}
+
+.followNewsText{
+    width: 376px;
+    height: 43px;
+    margin: 40px 0 119px 0;
+
+    font-family: Ronoto400;
+    font-size: $bigFontSize;
+    line-height: 27.19px;
+    color: $darkGreyColor;
+}
+
+.followNewsText span{
+    font-family: Roboto700;
+    color: rgba(38, 36, 33, 1);
+}
+
+.socialIcons{
+    width: 93px;
+    height: 23px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.images{
+    width: 629px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.newsleftImages{
+    width: 242px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+}
+
+// Follow news section style end
+
+// Footer style start
+
+#footer{
+    width: 100%;
+    height: 275px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    background-color: $darkGreyColor;
+}
+
+.innerFooter{
+    width: 998px;
+    height: 129px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.footerTitle{
+    font-family: Roboto700;
+    font-size: $mediumFontSize;
+    line-height: 11px;
+    letter-spacing: 1px;
+    color: $whiteColor;
+    margin-bottom: 33px;
+}
+
+.footerList{
+    list-style-type: none;
+}
+
+.footerList li{
+    font-family: Roboto400;
+    font-size: $littleFontSize;
+    line-height: 10px;
+    color: $whiteColorWithOpacity;
+    margin-bottom: 15px !important;
+}
+
+.footerList li:last-child{
+    margin-bottom: 0px;
+}
+
+.conquest{
+    width: 160px;
+    height: 100%;
+    position: relative;
+}
+
+#footerLogo{
+    position: absolute;
+    top:-8px;
+}
+
+.conquestP{
+    font-family: PD700;
+    font-size: $mediumFontSize;
+    line-height: 13px;
+    letter-spacing: 1px;
+    margin-left: 28px;
+    color: $whiteColor;
+}
+
+.footerText{
+    font-family: Roboto400;
+    font-size: $littleFontSize;
+    line-height: $littleLineHeight;
+    color: $whiteColorWithOpacity;
+}
+
+.telephone{
+    margin: 23px 0 15px 0;
+}
+
+.aboutCompany{
+    width: 123px;
+    height: 100%;
+}
+
+.buyers{
+    width: 181px;
+    height: 100%;
+}
+
+.paymentAndDelivery{
+    width: 180px;
+    height: 100%;
+}
+
+// Footer style end
